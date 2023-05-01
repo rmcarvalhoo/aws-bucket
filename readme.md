@@ -1,7 +1,7 @@
 # Comandos
 Documentação https://developer.hashicorp.com/terraform/cli/commands
 
-### Executar as seguintes estapas para criar o bucket na AWS , os camandos abaixo foram retiarados do link acima 
+### Executar as seguintes etapas para criar o bucket na AWS, os comandos abaixo foram retirados do link acima 
 > terraform init
 ``` ************ SAIDA ESPERADA ************
 Initializing the backend...
