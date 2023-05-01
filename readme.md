@@ -1,8 +1,8 @@
-# comandos
+# Comandos
 Documentação https://developer.hashicorp.com/terraform/cli/commands
 
-## Executar as seguintes estapas para criar o bucket na AWS , os camandos abaixo foram retiarados do link acima 
-terraform init
+### Executar as seguintes estapas para criar o bucket na AWS , os camandos abaixo foram retiarados do link acima 
+> terraform init
 ``` ************ SAIDA ESPERADA ************
 Initializing the backend...
 
@@ -27,13 +27,14 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-terraform validate
+> terraform validate
 ``` *********** SAIDA ESPERADA ************
 Success! The configuration is valid.
 ```
 
-terraform fmt
-terraform plan
+> terraform fmt
+
+> terraform plan
 ``` *********** SE APARECEER O ERRO COMO O DE BAIXO É PQ ESTA FALTANDO EXPORTAR AS CREDENCIAIS AWS ************
 Planning failed. Terraform encountered an error while generating this plan.
 
@@ -52,12 +53,13 @@ Planning failed. Terraform encountered an error while generating this plan.
 │ 
 ╵
 ```
-Para exportar as credencias basta rodar os exposts abaixo, Exemplo: 
+Para exportar as credencias basta rodar os exports abaixo, Exemplo: 
+```
 export AWS_ACCESS_KEY_ID=<COLOCAR A SUA ACCESS KEY>
 export AWS_SECRET_ACCESS_KEY=<COLOCAR A SUA ACCESS KEY SECRET>
+```
 
-
-terraform plan
+> terraform plan
 ``` *********** SAIDA ESPERADA ************
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -91,7 +93,7 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
-terraform apply
+> terraform apply
 ``` *********** SAIDA ESPERADA ************
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -135,7 +137,7 @@ aws_s3_bucket.first_bucket_terraform: Creation complete after 3s [id=curso-terra
 ```
 OLHE O SEU BUCKET S3 NA CONTA DA AWS QUE ELE FOI CRIADO
 
-terraform destroy
+> terraform destroy
 ``` *********** SAIDA ESPERADA ************
 aws_s3_bucket.first_bucket_terraform: Refreshing state... [id=curso-terraform-cremildo]
 
