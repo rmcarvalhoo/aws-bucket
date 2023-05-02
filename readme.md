@@ -1,3 +1,12 @@
+# aws-bucket
+Este projeto tem o objetivo de criar um bucket vazio na AWS utilizando o terraform.
+
+**Ide** - VSCode com o plugin do terraform
+
+**SO** - Ubuntu  
+
+**Terraform** - v1.4.5
+
 # Comandos
 Documentação https://developer.hashicorp.com/terraform/cli/commands
 
